@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import { Header } from "./MyComponents/Header.js";
+import { Route,Switch } from "react-router-dom";
+import { Product } from './MyComponents/Product';
+import { Download } from './MyComponents/Download';
+import { Pricing } from './MyComponents/Pricing';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header/>
+    <Switch>
+    <Route exact path="/" component={Product}/>
+    <Route path="/download" component={Download}/>
+    <Route path="/pricing" component={Pricing}/>
+    </Switch>
+  
+</>
+  )
 }
 
-export default App;
+export default App

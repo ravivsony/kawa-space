@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul .nav-link {
+  color: rgb(56, 55, 55) !important;
+  font-size: 0.85rem;
+}
+ul .nav-link:active {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: black;
+
+  border-bottom: 3px solid rgb(194, 4, 4);
+}
+ul .nav-link:visited {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: black;
+
+  border-bottom: 3px solid rgb(194, 4, 4);
+}
+ul .nav-link:hover {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: black;
+}
+ul .nav-link:focus {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: black;
+
+  border-bottom: 3px solid rgb(194, 4, 4);
+}
+ul .nav-link:active {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: black;
+
+  border-bottom: 3px solid rgb(194, 4, 4);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div .yoyo :link {
+  background-color: blueviolet !important;
+  color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div .yoyo :visited {
+  background-color: blueviolet !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+div .yoyo :hover {
+  background-color: blueviolet !important;
+  color: white;
+}
+div .yoyo :focus {
+  background-color: blueviolet !important;
+  color: white;
+}
+div .yoyo :active {
+  background-color: blueviolet !important;
+  color: white;
+}
+div .gender :active {
+  color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  text-transform: capitalize;
+  font-size: 0.65rem;
+}
+.name {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.email {
+  font-size: 0.62rem;
+  color: red;
+}
+.email:active {
+  color: white;
 }
