@@ -13,9 +13,9 @@ export const Product = () => {
   let profileCard = (curElem) => {
     // console.log("its working");
     setCard(
-      <div className="card text-center mb-3 m-auto w-75 p-3">
+      <div className=" piru card text-center mb-3 m-auto w-75 p-3">
         <div className="row ">
-          <div className="col-3 m-auto">
+          <div className="col-3  m-auto">
             <img
               src={curElem.picture.medium}
               className="rounded-circle "
